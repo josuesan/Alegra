@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <meta charset="utf-8">
+      <link href = "https://cdnjs.cloudflare.com/ajax/libs/extjs/6.0.0/classic/theme-neptune/resources/theme-neptune-all.css" 
+         rel = "stylesheet" />
+      <script type = "text/javascript" 
+         src = "https://cdnjs.cloudflare.com/ajax/libs/extjs/6.0.0/ext-all.js" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="styles/styles.css">
+
+      <link rel="stylesheet" href="styles/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!-- jQuery -->
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   </head>
+   <body>
+      <div class="navigation-bar" id="navigation-bar" >
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12 col-lg-12" >
+                  <div class="col-md-2 col-lg-2">
+                     <div class="logo">
+                        <a href="index.html"><img src="https://cdn1.alegra.com/images/logo_alegra.png" style="width: 178px;"/></a>
+                     </div>
+                  </div>
+                  <div class="col-md-4 col-lg-4">
+                     <div class="search">
+                        <input type="text" name="" placeholder="Buscar...">
+                     </div>
+                  </div>   
+                  <div class="col-md-6 col-lg-6">
+                     <div class="options">
+                        <ul>
+                           <li class="icon-help"><i class="fa fa-info" aria-hidden="true"></i>Ayuda</li>
+                           <li class="icon-support"><i class="fa fa-question" aria-hidden="true"></i>Soporte</li>
+                           <li class="icon-setup"><i class="fa fa-cog" aria-hidden="true"></i>Configuración</li>
+                           <li class="icon-close"><i class="fa fa-cog" aria-hidden="true"></i>Salir</li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="second-navigation-bar">
+         <div class="container">
+            <div class="row">       
+               <nav class="navbar ">
+                 <div class="container-fluid">
+                   <div class="navbar-header">
+                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#alegra-Navbar">
+                       <span class="icon-bar"></span>
+                       <span class="icon-bar"></span>
+                       <span class="icon-bar"></span>                        
+                     </button>
+                   </div>
+                   <div class="collapse navbar-collapse" id="alegra-Navbar">
+                     <ul class="nav navbar-nav">
+                       <li><a href="#">Inicio</a></li>
+                       <li><a href="#">Ingresos</a></li>
+                       <li><a href="#">Gastos</a></li>
+                       <li class="dropdown active">
+                         <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="true">Contactos</a>
+                         <ul class="dropdown-menu">
+                           <li><a href="#">Todos</a></li>
+                           <li><a href="#">Clientes</a></li>
+                           <li><a href="#">Proveedores</a></li>
+                         </ul>
+                       </li>
+                       <li><a href="#">Inventario</a></li>
+                       <li><a href="#">Bancos</a></li>
+                       <li><a href="#">Categorías</a></li>
+                       <li><a href="#">Reportes</a></li>
+                     </ul>
+                     <ul class="nav navbar-nav navbar-right">
+                       <li><a href="#"><i class="fa fa-plus-circle" aria-hidden="true"></i>Nuevo</a></li>
+                     </ul>
+                   </div>
+                 </div>
+               </nav>
+            </div>
+         </div>
+      </div>
+
+      <div class="menu-contacs">
+         <div class="container">
+            <div class="row"> 
+               <nav class="navbar navbar-default">
+                 <div class="container-fluid">
+                   <div class="navbar-header">
+                     <a class="navbar-brand" href="#"><i class="fa fa-file-text" aria-hidden="true" style="margin-right: 1rem;"></i>Contactos</a>
+                   </div>
+                   <!--Home Menu-->
+                   <ul class="nav navbar-nav alegra-Navbar-nav home-Menu">
+                     <li> <button class="btn btn-alegra"> <a href="views/add.html">Añadir contacto</a> </button></li>
+                     <li> <button class="btn btn-alegra"> <a href="#">Importar desde excel</a> </button></li>
+                     <li> <button class="btn btn-alegra"> <a href="#">Exportar</a> </button></li>
+                   </ul>
+                 </div>
+               </nav>
+            </div>
+         </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <!--home panel-->
+          <div id = 'content' style="width:100%;margin:0 auto;display: block;"></div> 
+        </div>
+      </div>
+      
+      <!--Footer-->
+      <div class="alegra-footer">
+         <div class="container footer">
+            <div class="row">
+               <div class="col-md-12 col-lg-12" >
+                  <div class="col-md-4 col-lg-4">
+                     <div class="box">
+                        <div class="image-box"><img src="https://cdn1.alegra.com/images/ayuda_icon.png" class="icon-list"></div>
+                        <h3>Ayuda paso a paso</h3>
+                        <ul>
+                           <li>Como crear una factura de venta</li>
+                           <li>Como crear una factura de proveedor</li>
+                           <li>Como crear una cuenta de banco</li>
+                           <li>Como importar contactos </li>
+                           <li>Como registrar un pago a una factura de venta</li>
+                           <li>Como crear una nota de credito </li>
+                        </ul>                  
+                     </div>
+                  </div>
+                  <div class="col-md-6 col-lg-6">
+                     <div class="box">
+                        <div class="image-box"><img src="https://cdn1.alegra.com/images/soporte_icon.png" class="icon-list"></div>
+                        
+                        <h3>Soporte</h3>
+                        <ul>
+                           <li>Contáctanos</li>
+                           <li>Centro de ayuda</li>
+                           <li>Manual de primeros pasos en alegra</li>
+                           <li>Plan de referidos</li>
+                           <li>Comparte tu historia</li>
+                        </ul>
+                        
+                     </div>
+                  </div>
+               <div class="col-md-2 col-lg-2">
+                     <div class="box">
+                        <div class="image-box"><img src="https://cdn1.alegra.com/images/info_icon_1.png" class="icon-list"></div>
+                        
+                        <h3>Contactos</h3>
+                        <ul>
+                           <li>¿Como crear un cliente?</li>
+                           <li>¿Como importar contactos?</li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>          
+            </div>
+         </div>
+      </div>  
+   </body>
+</html>
